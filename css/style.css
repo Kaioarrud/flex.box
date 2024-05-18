@@ -11,7 +11,7 @@
     flex-wrap: wrap;
     /* wrap | wrap-reverse | */
 
-    justify-content: center;
+    justify-content:space-between;
     /* flex-end | center | space-between | space-around */
 
     align-items: stretch;
@@ -20,7 +20,7 @@
     align-content: stretch;
     /* flex-start | flex-end| center|*/
 }
-item {
+.item {
     background-color: aqua;
     color: white;
     padding: 20px;
