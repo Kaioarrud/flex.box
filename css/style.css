@@ -1,0 +1,29 @@
+@charset "UFT-8";
+
+.container {
+    background-color: gray;
+    height: 500px;
+    display: flex;
+
+    flex-direction: row;
+    /* column | row-reverse | column-reverse */
+
+    flex-wrap: wrap;
+    /* wrap | wrap-reverse | */
+
+    justify-content: center;
+    /* flex-end | center | space-between | space-around */
+
+    align-items: stretch;
+    /* flex-start| flex-end| center| sapce-between| space-around */
+
+    align-content: stretch;
+    /* flex-start | flex-end| center|*/
+}
+item {
+    background-color: aqua;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    width: 200px;
+}
