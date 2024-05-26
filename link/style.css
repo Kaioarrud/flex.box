@@ -5,7 +5,7 @@
     padding: 0px;
     font-size: 100%;
     box-sizing: border-box;
-    font-family: 'Open Sans';
+    font-family: 'Opens sants' Arial, Helvetica, sans-serif;
 }
 a {
     text-decoration: none;
@@ -148,24 +148,24 @@ a:hover {
 }
 
 /* Caracteristicas */
+
 .caracteristicas {
     background-color: #191c03;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 50px;
+    padding: 100px ;
 }
 .caracteristicas h3 {
-    text-align: center;
     font-size: 2rem;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     color: #fff;
 }
 .caracteristicas p {
-    color: #fff;
     max-width: 800px;
     margin-bottom: 35px;
     text-align: center;
+    color: #fff;
 }
 .caracteristicas hr {
     width: 200px;
@@ -177,16 +177,85 @@ a:hover {
 .caracteristicas .grid {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
 }
-.caracteristicas li {
-    color: #fff;
+.caracteristicas .grid li {
+    padding: 0 30px;
     text-align: center;
-    height: 350px;
-    padding: 20px;
-    border-radius: 4px;
     list-style: none;
-    background-clip: content-box;
-    background-size: cover;
-    background-position: center;
+}
+.caracteristicas .grid li i {
+    color: #c3c633;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.caracteristicas .grid li h4 {
+    font-size: 1.5em;
+    color: #c3c633;
+    margin-bottom: 30px;
+}
+.caracteristicas .grid li p {
+    color: #fff;
+}
+@media (max-width: 800px) {
+    .caracteristicas .grid {
+    
+        flex-direction: column;
+    }
+}
+
+/* newsletter */
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+.newsletter h3 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+    color: #c3c63b;
+    text-align: center;
+}    
+.newsletter p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    color: #c3c63b;
+    text-align: center; 
+}
+.newsletter hr {
+    width: 200px;
+    height: 2px;
+    background-color: #c3c63b;
+    margin-bottom: 70px;
+    border: none;
+}
+.newsletter form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 800px;
+}
+.newsletter input {
+    padding: 15px;
+    border: 1px solid #191c03;
+    border-radius: 4px;
+    margin-right: 15px;
+    flex: 1;
+}
+.newsletter button {
+    padding: 15px;
+    border: 1px solid #191c03;
+    border-radius: 4px;
+    color:black;
+    cursor: pointer;
+    text-decoration: dotted;
+}
+@media (max-width: 700px){
+    .newsletter input {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
 }
